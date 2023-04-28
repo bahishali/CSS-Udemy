@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            /* Tüm etiketlere box boyutuna padding ve border size genişliğe eklenmez border+padding+content hep eşit kalır */
+        }
+        .box{
+            float: left;
+            width: 33.33%;
+            border: 1px solid red;
+            padding: 50px;
+            text-align: center;
+        }
+        .bus{
+            margin-bottom: 30px;
+        }
+        .bus::after{
+            content:"" ;
+            clear: both ;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        floatların genel amacı div veya container ların içini hizalamaktır
+        float: right;
+        float: left;
+        No float
+        The clear Property
+        The clearfix Hack
+        Grid of Boxes / Equal Width Boxes
+        Images Side By Side
+        Equal Height Boxes
+        Web Layout Example
+    -->
+    <h2>Equal Boxes</h2>
+    <div class="bus">
+        <div style="background-color: silver;" class="box">
+            <p>Text</p>
+        </div>
+        <div style="background-color: silver;" class="box">
+            <p>Text</p>
+        </div>
+        <div style="background-color: silver;" class="box">
+            <p>Text</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corrupti quos, sit dicta libero molestias dolorem, odio esse assumenda ducimus ea nihil laborum tempora vel mollitia temporibus illum soluta deserunt. Non aliquid suscipit magni nesciunt atque necessitatibus ullam animi ipsa iure corporis rem maiores error doloremque ducimus, excepturi odio facilis dolorem nulla, nemo iste autem rerum amet ad. Quidem, dignissimos quod enim maiores ab similique totam inventore saepe voluptatem amet laudantium aliquam, libero accusantium eius nulla autem a, reiciendis beatae numquam unde? Cum possimus eius ullam sunt! Quaerat iste, modi consequuntur deserunt molestias natus repudiandae perferendis unde eveniet? Magni, ex!</p>
+
+
+    </div>
+
+</body>
+</html>

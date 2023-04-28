@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            /*
+            ayrı ayrı margin vermek
+            margin-top: 100px ;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+            Tek margin ile hepsini yapmak mümkün
+            sırasıyla 
+            margin: üst sağ alt sol;
+            margin: 100px 50px 100px 50px;
+
+            sağ ve sol eşitse, üst ve alt margin eşitse hepsini ayrı ayrı yazmaya gerek yok
+            margin: üst=alt sağ=sol;
+
+            4 tarafına aynı margin i vermek istersen birini yazsan yeterli;
+            margin: 100px;
+
+            margin: auto; sağdan ve soldan sayfayı ortalamak istiyorsan
+            */
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .busra{
+            width: 300px;
+            border : 1px solid blue;
+            margin: auto;
+        }
+        h3{
+            margin-left: 50px;
+        }
+
+        /* Parent Child Relation*/
+        .parent {
+            border: 1px solid blue;
+            margin-left: 100px;
+        }
+        .child{
+            margin-left: inherit;
+        }
+         /* Margin Collapse
+         peşpeşe h lara margin verdiğimde ikisinin ortasında kalan kısım toplanmaz
+         birine aşağıdan 100px diğerine yukarıdan 20px dersek 120px olmaz hangisi fazlaysa o geçerli olur  */
+        h1{
+            margin: 100px;
+        }
+
+        h2{
+            margin: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--    
+        Individual Sides
+        Shorthand Property
+        Auto Value : margin: auto;
+        Inherit
+        Margin Collapse
+    -->
+    <h3>Margin Properties</h3>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias voluptates possimus. Qui dolores ullam similique possimus quidem totam perferendis illo natus fugiat quo sunt, cupiditate obcaecati, dicta ducimus doloribus architecto maxime mollitia numquam quos ab molestias, quisquam accusamus voluptatibus alias! Atque expedita assumenda id?
+    </div>
+    <div class="busra">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias voluptates possimus. Qui dolores ullam similique possimus quidem totam perferendis illo natus fugiat quo sunt, cupiditate obcaecati, dicta ducimus doloribus architecto maxime mollitia numquam quos ab molestias, quisquam accusamus voluptatibus alias! Atque expedita assumenda id?
+    </div>
+
+    <h2>Inherit usage</h2>
+    <!--    
+        div'in içinde bir p etiketi olsun. p div'in child'ı oluyor. div'e tanımladığım bir style'ı p'de inherit edersem p'ye aktarmış oluyor.
+    -->
+    <div class="parent" >
+        <p class="child">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quae dolorem mollitia, non corporis distinctio cum.</p>
+    </div>
+    <h1>Margin Collapse</h1>
+    <h2>Margin Collapse</h2>
+</body>
+</html>

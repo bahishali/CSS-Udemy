@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Link</title>
+    <style>
+        /* 
+        a:link  tıklarken sadece renkli olsun  dersek a:link yapıyoruz
+        a{}  tıkladıktan sonra da rengi pink olsun dersek a{} desek yeterli
+        a:visited tıkladıktan sonraki rengini belirlemek için 
+        a:hover üzerine geldiğimde rengi belirlemek
+        a:active tıklarken ki rengi*/
+
+        a:link, a:visited{
+            color: white;
+            background-color: red;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+        }
+        /* a:visited{
+            color: green;
+            text-decoration: none;
+            background-color: burlywood;
+        } */
+        a:hover,a:active{
+            /* color: aqua;
+            text-decoration: underline; */
+            background-color: red;
+        }
+        /* a:active{
+            color: blue;
+            text-decoration: unset;
+        } */
+
+    </style>
+</head>
+<body>
+    <!--
+        Stylink Links
+        Text Decoration
+        Background Color
+        Advanced Link Buttons
+    -->
+
+    <p><a href="https://www.google.com/">Go to Google</a></p>
+</body>
+</html>

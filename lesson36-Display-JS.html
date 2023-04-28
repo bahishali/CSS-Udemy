@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        img{
+            width: 100%;
+
+        }
+        .imgbox{
+            float: left;
+            border: 1px solid gray;
+            margin: 4px;
+            padding: 10px;
+            width: 150px;
+        }
+        button{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox" id="imgbox1">
+        Picture1 <br>
+        <img src="image/car1.jpg">
+        <button onclick="removeElement()">Delete</button>
+    </div>
+
+    <div class="imgbox" id="imgbox2">
+        Picture2 <br>
+        <img src="image/car2.jpg">
+        <button onclick="changeVisibility()">Hide</button>
+    </div>
+
+    <div class="imgbox" id="imgbox3">
+        Picture3 <br>
+        <img src="image/car3.jpg">
+        <button onclick="resetElement()">Reset</button>
+    </div>
+
+    <script>
+        function removeElement(){
+            document.getElementById("imgbox1").style.display="none";
+        }
+        function changeVisibility(){
+            document.getElementById("imgbox2").style.visibility="hidden";
+        }
+        function resetElement(){
+            document.getElementById("imgbox1").style.display="block"; /*inline da yazabilirsin*/
+            document.getElementById("imgbox2").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

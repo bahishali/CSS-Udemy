@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /* a[target]{
+            background-color: yellowgreen;
+        }
+        a[target=_blank]{
+            background-color: red;
+        }
+        a[target=_top]{
+            background-color: purple;
+        } */
+        /*içinde bus geçenlere*/
+        /* [title~=bus]{
+            background-color: yellow;
+
+        } */
+
+        /*value değeri bus ile  başlıyor ve tamamı oysa*/
+        /* [title|=bus]{
+            background-color: yellow;
+        }         */
+        
+        /* başlangıçtan itibaren bus kelimesi geçiyorsa*/
+        /* [title^=bus]{
+            background-color: yellow;
+        } */
+
+        /* sondan itibaren bus kelimesi geçiyorsa*/
+        [title$=bus]{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- CSS :target Selector
+    CSS [attribute] Selector
+    CSS attribute="value" Selector
+    CSS attribute~="value"1 Selector
+    CSS attribute^="value" Selector
+    CSS attribute$="value"1 Selector
+    CSS attribute*="value"1 Selector -->
+        <a href="https://www.google.com" title="Link">Google</a>
+        <a href="https://tureng.com/tr/turkce-ingilizce" target="_blank" title="bus">Tureng</a>
+        <a href="https://www.w3schools.com" target="_top" title="bus ahis">W3School</a>
+
+
+</body>
+</html>

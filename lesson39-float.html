@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* img{
+            /* float:left; 
+            float: right;
+            width: 200px;
+            height: 200px;
+        } */
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        .div1{
+            width: 700px;
+            border: 2px solid red;
+            float:right; /* 2 div birbriinin içine girdi bunu deyince clear kullanmadan*/
+            margin: 10px;
+            /*overflow: auto; /*içine sığdırmaya çalışır*/
+        }
+
+        /*modern clear fixed yöntemi overflow: auto yerine .div1::after, aşağıdaki gibi*/
+        .div1::after{
+            content: "";
+            clear: both;
+            display: table;
+
+        }
+        .class1{
+            float: left;
+        }
+
+        /* .div2{
+            border: 1px solid blue;
+            clear:left; /* float:left; deyince div1 de bu 2 div birbriinin içine girmişti clear:left; deyince düzeldi 
+            float:left dersek clear:left dememiz lazım
+            float:right dersek clear:right dememiz lazım
+
+        } */
+    </style>
+</head>
+<body>
+    <!--
+        floatların genel amacı div veya container ların içini hizalamaktır
+        float: right;
+        float: left;
+        No float
+        The clear Property
+        The clearfix Hack
+        Grid of Boxes / Equal Width Boxes
+        Images Side By Side
+        Equal Height Boxes
+        Web Layout Example
+    -->
+    <!-- <p>
+        <img src="image/car1.jpg" alt="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nemo aperiam ipsam dicta porro modi totam soluta amet, sint deserunt dolor, perspiciatis eligendi ducimus voluptate id eius minima. Pariatur iusto cupiditate quos ab blanditiis expedita quibusdam obcaecati consequuntur! Fugit cupiditate porro, illum deleniti in error nobis cum deserunt eligendi eaque fugiat nostrum rerum est quod suscipit at commodi. Tempore voluptas praesentium cumque doloribus eaque laudantium distinctio nobis, nisi magnam quia totam? Maxime eum officia eaque earum, molestiae ullam saepe pariatur dolore dignissimos aperiam quis voluptatum autem vitae porro perspiciatis! Adipisci cum iste recusandae possimus ab vitae reprehenderit officiis voluptate saepe!</p> -->
+
+    <h2>Without Clear </h2>
+    <div class="div1">
+        <img src="image/car1.jpg" alt="" class="class1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi excepturi velit provident voluptatem minima et enim atque optio in architecto quae voluptate distinctio minus nemo obcaecati, totam mollitia quia quam iusto animi. Enim perferendis, atque dignissimos itaque provident asperiores corrupti necessitatibus eligendi amet in omnis ipsam esse blanditiis culpa?</div>
+    <!-- <div class="div2">div2</div> -->
+
+</body>
+</html>

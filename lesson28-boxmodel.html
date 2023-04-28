@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        div{
+            border: 1px solid blue;
+            background-color: aqua;
+            /*padding-top: 50px;
+            padding-left: 80px;
+            padding-right: 30px;
+            padding-bottom: 90px;*/
+
+            /* hepsini bir padding de tanımlayabiliriz
+            padding: 50px 80px 30px 90px;*/
+
+            /* left-right top-bottom aynı ise
+            padding: 50px 40px;*/
+
+            /* hepsi aynı ise */
+            padding: 50px;
+            width: 400px;
+            height: 500px;
+            margin: auto;
+
+            /* padding i artırdıkça yazı alanı değğişmez box boyutu artar, yazı alanının değişmesini box ın width ve height ın aynı kalmasını istersek box-sizing: border-box */
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Padding Usage</h2>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum libero saepe vitae in, qui praesentium nihil fugit placeat laboriosam quas adipisci nam alias dolorem labore unde amet inventore natus cumque!
+    </div>
+</body>
+</html>

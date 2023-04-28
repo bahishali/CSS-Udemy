@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /*descendant selector div p {} p iki altında da olsaydı burada tanımlanan özellikler div in altındaki tüm p lere uygulanır*/
+        div p{ 
+            background-color: yellow;
+        }
+        /*Child Selector: div in hemen altındaki p ye css vermek için div >p {}*/
+        div >p {
+            background-color: pink;
+
+        }
+        /*Adjacent Sibling Selector: bir etiketten hemen sonraki etikete css vermek için
+        */
+        div+p{
+            background-color: rgb(167, 31, 208);
+        }
+        /*General Sibling Selector div ile aynı seviyedeki p lere css vermek*/
+        div ~ p {
+            color: white;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!--
+        CSS Combinators
+            Descendant Selector
+            Child Selector
+            Adjacent Sibling Selector
+            General Sibling Selector
+    -->
+
+    <div>
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+        <section><p>Paragraph3</p></section> 
+    </div>
+
+    <p>Paragraph4</p>
+    <div>aa</div>
+    <p>Paragraph5</p>
+</body>
+</html>

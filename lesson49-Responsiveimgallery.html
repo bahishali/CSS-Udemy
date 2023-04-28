@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        div.gallery{
+            
+            border: 1px solid rgb(206, 199, 199);
+        }
+
+        div.gallery:hover{
+            border: 1px solid black;
+        }
+
+        div.gallery img{
+            width: 100%;
+            height: auto;
+        }
+        div.desc {
+            text-align: center;
+            padding: 15px;
+        }
+        .responsive{
+            width: 25%;
+            float: left;
+            padding: 0 6px;
+        }
+
+        /*tüm html tag lerine css vermek*/
+        *{
+            /*padding ve border değerlerinin width e dahil etmemiş oluruz
+            width=180px dediğimiz zaman 180 hepsinin toplamı oluyor üzerine eklenmiyor*/
+            box-sizing: border-box;
+
+        }
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media only screen and (max-width:700px) {
+            .responsive{
+                width: 50%;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            .responsive{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+        telefon, tablet, pc degörüntününn bozulmadığı sayfalara sitelere responsive diyoruz
+        Css media queries -->
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="image/1.jpg">
+                    <img src="image/1.jpg" alt="New 1" width="600" height="400">
+                </a>
+                <div class="desc">A Nice Photograph</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="image/2.jpg">
+                    <img src="image/2.jpg" alt="New 2" width="600" height="400">
+                </a>
+                <div class="desc">A Nice Photograph</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="image/3.jpg">
+                    <img src="image/3.jpg" alt="New 3" width="600" height="400">
+                </a>
+                <div class="desc">A Nice Photograph</div>
+            </div>
+        </div>
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="image/4.jpg">
+                    <img src="image/4.jpg" alt="New 4" width="600" height="400">
+                </a>
+                <div class="desc">A Nice Photograph</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor, placeat inventore quasi, voluptatem id cupiditate mollitia repellat odit possimus facilis obcaecati doloremque tempore debitis libero sequi vitae? Amet voluptas possimus consectetur corrupti eius! Consequatur quam saepe tempore aperiam, veniam magnam sed error sint rerum, quidem iste vero libero, ea est exercitationem minima dolorem. Corrupti pariatur, quidem magnam aperiam voluptatem expedita, repellendus blanditiis esse odit quo hic reiciendis doloribus nam ipsam sequi tenetur unde aut. Molestiae alias veniam earum ipsum quibusdam. Rem mollitia assumenda, provident, accusamus ipsam, quae recusandae quisquam eaque qui fugit veritatis? Autem distinctio voluptas maiores tenetur dolorum.
+            </p>
+        </div>
+</body>
+</html>

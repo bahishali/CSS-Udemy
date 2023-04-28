@@ -1,0 +1,14 @@
+/* 
+    selector
+    declaration: beyan açıklama ifade demeç bildirme
+    Property
+    Value
+
+    h1: selector
+    {declaration}
+    color, font-size: property
+    blue, 12px : value   */ 
+h1 
+{
+    color:blue; font-size: 12px;
+}

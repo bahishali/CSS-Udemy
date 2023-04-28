@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+
+    <style>
+  
+
+        .dropdowncontent{
+            position: absolute;
+            display: none;
+            /* right: 0; */
+            background-color: rgb(189, 194, 192);
+            min-width: 200px;
+            box-shadow: 0px 10px 15px 0px rgb(0,0,0,0.2);
+            /* padding: 15px 26px;
+            text-align: center;
+            font-size: 20px; */
+        }
+
+        .dropdowncontent a:hover{
+            background-color: hotpink;
+
+        }
+        .dropdown:hover .dropdowncontent{
+            display: block;
+
+        }
+        .dropdowncontent a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+        }
+
+        li{
+            float: left;
+        }
+        li a, .dropbtn{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        ul{
+            list-style-type: none;
+            background-color: rgb(73, 70, 70);
+            overflow: hidden;
+        }
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+    Basic Dropdown
+    Dropdown Menu
+    Right-aligned Dropdown Content
+    Dropdown Image
+    Dropdown Navbar
+    Dropdown Menu inside a Navigation Bar -->
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new">News</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdowncontent">
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+            </div>
+        </li>
+    </ul>
+
+
+</body>
+</html>

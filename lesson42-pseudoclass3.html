@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class2</title>
+    <style>
+       /* input:checked{
+        height: 50px;
+        width: 50px;
+       }
+       form.bus input[type=text]:enabled{
+        background-color: red;
+       }
+
+       form.bus input[type=text]:disabled{
+        background-color: blue;
+       } */
+
+       /* p:empty{
+        width: 150px;
+        height: 50px;
+        background: red;
+       } */
+       /*body deki ilk child a css vermek*/
+
+       /* p:first-of-type{
+        width: 150px;
+        height: 50px;
+        background: red;
+       } */
+
+       /* input:in-range{
+        border: 1px solid red;
+
+        /* value email formatına uymuyorsa bunu yap
+       }
+       input:invalid{
+        border: 1px solid red;
+       } */
+
+       /* p:first-child{
+        background: red;
+       }
+       p:last-child{
+        background: blue;
+       }
+       /* last-child ile last-of-type aynı şey
+       p:last-of-type{
+        background: yellowgreen;
+       } */
+
+       /* p{
+        background: red;
+       } */
+       /*p olmayanlar için css vermek için*/
+       /* :not(p){
+        background: blue;
+       }  */
+
+       /*benim child ım parentına göre kaçıncı sıradaysa onu belirtip css veriyorum.
+       mesela body ye göre 2.p ye css vermek*/
+        p:nth-child(2){
+            background: red;
+        }
+        /* nth-last-child sondan sayıyor
+        nth-last-of-type ile aynı*/
+        p:nth-last-child(1){
+            background: yellow;
+        }
+        /* p nin parentında sadece 1 tane p child ının olduğu durumu seçer ve css uygular.
+        only-child ile aynı şey*/
+        p:only-of-type{
+            background-color: yellowgreen;
+        }
+
+        /*required olmmayan optional olan alana css vermek*/
+        input:optional{
+            background-color: purple;
+            color: white;
+        }
+        /*required olan alana css vermek*/
+        input:required{
+            background-color: palevioletred;
+            color: white;
+        }
+
+        /*value range in dışındaysa*/
+        input:out-of-range{
+            border: 1px solid black;
+            background-color: orange;
+        }
+        /* sadece okunabilen ama yazılamayan kısımlara css vermek için*/
+        input:read-only{
+            background-color: blue;
+        }
+        /* sadece okunan ve yazılan alana css vermek için*/
+        input:read-write{
+            background-color: aqua;
+        }
+        /* root html tag lerinin hepsini ifade eder*/
+        :root{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--
+        :checked -- input radio button checkbox larda kullanılır sayfa açıldığında başta seçili yapar
+
+        :disabled -- formlarda inputlarda değiştirilemeyen yazılarda
+        :enabled -- enabled defualt hali
+
+        :empty -- içi boş olan html etiketine css style vermek için p:empty{}
+        
+        :first-of-type
+        :focus
+        :in-range
+        :invalid
+        :last-child
+        :last-of-type
+        :not(selector)
+        :nth-child(n)
+        :inth-last-child(n)
+        :inth-last-of-type(n)
+        :nth-of-type(n)
+        :only-of-type
+        :only-child
+        :optional
+        :out-of-range
+        :read-only
+        :read-write
+        :required
+        :root
+        :target
+        :valid
+        ::after
+        ::before
+        ::first-letter
+        ::first-line
+        ::selection
+    -->
+    <!-- <form action="">
+        <input type="radio" checked="checked" value="Male" name="Gender"> 
+        
+        Burada name="Sex" yazınca database e sadece 2 seçenekten biri kayıtlı olacak ve her ikisini birden seçtirmyecek sadece bi tane seçili olacak
+        
+        <input type="radio" value="Female" name="Gender">
+        <input type="checkbox" checked="checked" value="Bicycle">
+        <input type="checkbox" value="Car">
+    </form>
+
+    <form class="bus" action="">
+        Name Surname:<input type="text" Value="Busra Ahis"> <br>
+        Address:<input type="text" value="Teknik street"> <br>
+        City:<input type="text" value="İstanbul"> <br>
+        Subcity:<input disabled="disabled" type="text" value="Kağıthane">
+    </form> -->
+    <!-- <div>
+        Bus
+    </div>-->
+    <p>asd</p>
+    <p>Bus</p>
+    <p>Bus Ahis</p>
+
+    <!--
+    <input type="number" min="5" max="15" value="9">
+    <input type="email" value="canboz@gmail.com"> 
+
+    <div>
+        Bus Ahis
+    </div> -->
+    <div>
+        <p>busra ahishali</p>
+    </div>
+    <div>
+        <p>Bus1</p>
+        <p>Bus2</p>
+    </div>
+    <!-- 
+        required doldurulması zorunlu alan
+        eğer required değilse default ı optional dır 
+    -->
+    Name<input type="text"> <br>
+    Surname<input type="text" required>
+    <input type="number" min="6" max="15" value="20"><br>
+    <!-- yalnızca okunmasını ama yazılmasını istemediğimiz alanlara readonly -->
+    <input type="text" readonly value="busra"><br>
+    <input type="text" value="busra">
+</body>
+</html>

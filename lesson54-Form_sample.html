@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+
+        input[type=text],select{
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid palevioletred;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        input[type=text]:focus{
+            background-color: yellow;
+        }
+        input[type=text]:hover{
+            background-color: pink;
+        }
+        div{
+            padding: 20px;
+            background-color: gainsboro;
+            border-radius: 5px;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 13px 20px;
+            margin-top: 10px;
+            background-color: purple;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Styling Input Fields
+        Padded Inputs
+        Bordered Inputs
+        Colored Inputs
+        Focused Inputs
+        Input with icon image
+        Animated Search Input
+        Styling Textareas
+        Styling Select Menus
+        Css Form Example 1
+        Responsive Form 
+    -->
+    <div>
+        <form action="/Home/FormDoldur">
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" placeholder="Enter your name">
+
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" placeholder="Enter your lastname">
+
+            <label for="country">Country</label>
+            <select name="country">
+                <option value="tr">Turkey</option>
+                <option value="fr">France</option>
+                <option value="en">England</option>
+            </select>
+    
+            <input type="submit" value="Save">
+    
+    
+    
+        </form>
+    </div>
+
+
+</body>
+</html>

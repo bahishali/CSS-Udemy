@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element</title>
+    
+    <style>
+        /*pseudo class lardan farkı ik tane iki nokta ::*/
+        p::first-line{
+            color: red;
+            font-variant: small-caps;
+        }
+        p.bus::first-letter{
+            color: blue;
+            font-size: xx-large;
+        }
+        /*
+        ::after : tanımlamış olduğum html taginden sonra eklemek istediğini
+        before : tanımlamış olduğum html taginden önce eklemek istediğini
+        */
+        p::after{
+            content: " Busra Ahishali";
+        }
+        p::before{
+            content: "Busra Ahishali ";
+        }
+        /*::selection: seçili haline css vermek*/
+        p::selection{
+            color: red;
+            background-color: yellow;
+        }
+
+    </style>
+<body>
+    <p class="bus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolores aliquid ducimus ex ea tenetur repellendus omnis magnam architecto, dolorem praesentium! Ut doloremque quod adipisci. Illo hic repudiandae in quia consequatur mollitia aliquam facere magni, dolor rerum laborum ea voluptatum nostrum, et alias neque unde vero consectetur nesciunt architecto nobis. Est, sint nesciunt expedita sit quisquam facilis quis? Temporibus architecto alias voluptas reprehenderit iusto, dolore quisquam harum pariatur ratione dolores repellat minus sit in consequatur vero quasi. Ratione reiciendis accusamus dolores maxime magni soluta, quos sequi iusto nihil officia? Distinctio, omnis aspernatur magni illum sunt blanditiis velit debitis cupiditate? Aliquam!</p>
+
+</body>
+</html>

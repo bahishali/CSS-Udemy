@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /*div.relative{
+            position: relative; /*relative; /*static yaparsam stabil kalıyor diğer şeyleri uygulamıyor left:30px i uygulamıyor mesela
+            uygulamasını istersek relative yapmamız lazım
+            fixed sayfa küçülse de aşağı kaysak da belirli bir alanda sabit kalmasını istiyorsam
+            absolute
+            child absolute parent relative ise child parent a göre konumlanır sayfaya göre değil
+            border: 2px solid red;
+            /*left: 30px;  normal poszisyonuna göre 30px içeri
+            top:100px;
+            bottom: 0px;
+            right: 0px;
+            width: 500px;
+            height: 200px;*/
+            
+        /* }
+        div.absolute{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            border: 3px solid blue;
+            top: 80px;s
+            right: 0px;
+        } */
+
+        div.bus{
+            position: -webkit-sticky;
+            position: sticky;
+            border: 2px solid blue;
+            background-color: aqua;
+            padding: 5px;
+            top: 0px; /* sticky özelliğini kullanabilmek için bunu vermemiz lazım*/
+        }
+
+        /* img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 200px;
+            height: 200px;
+            z-index: -1; /* yazılara göre alt katmana aldı
+        } */
+
+        .container{
+            position: relative;
+
+        }
+        .busra{
+            position: absolute;
+            bottom:50%;
+            right: 0px;
+            color: white;
+            text-align: center;
+            width: 100%;
+            background-color: black;
+        }
+        img{
+            opacity: 0,3;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Position Static
+        Position Relative
+        Position Fixed
+        Position Absolute
+        Position Sticky
+        Overlapping Elements
+        Positioning Text In an Image
+    -->
+    <!-- <h2>Position Static</h2> -->
+    <!-- <div class="static">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt molestias porro quod libero repellat laboriosam, doloribus qui eligendi ab voluptatem a nihil doloremque, repellendus animi omnis in facere sit praesentium, facilis voluptate saepe iure? Amet voluptate, libero itaque inventore numquam nisi asperiores voluptatum provident molestias? Id unde consequatur eligendi laborum debitis quia illum nam culpa. Ducimus atque deserunt similique? Commodi magnam, dolore quos libero magni modi a quas molestias saepe deserunt provident culpa repudiandae est, consequuntur ducimus tempore? Optio eveniet accusamus aspernatur non, doloribus obcaecati voluptates possimus mollitia? Animi numquam laboriosam provident magni earum quasi quos soluta nobis molestias hic, tempora unde adipisci ab voluptate harum voluptas reiciendis odit? Eaque at qui illum quod odio, dolore perferendis sequi eos repellat dolorem amet tenetur, deserunt omnis eum consequuntur explicabo. Itaque deserunt, amet recusandae temporibus vitae accusamus reprehenderit iusto commodi ab aliquam quam aliquid consequuntur aperiam animi harum, inventore odit nesciunt.
+    </div> -->
+    <!-- <div class="relative">Relative
+        <div class="absolute">Absolute</div>
+    </div> -->
+    <h1>Busra Ahishali</h1>
+    <!-- <img src="image/car1.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate obcaecati commodi corporis ab!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis, enim quaerat voluptate vitae recusandae?</p> -->
+    <!-- <div class="bus">
+        I am Sticky!
+    </div>
+    <div style="padding-bottom: 2000px;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur aliquam enim accusamus laudantium repellendus sit, in beatae sunt praesentium, possimus quas cum suscipit omnis asperiores, excepturi aut unde officiis ut?
+    </div> -->
+
+    <div class="container">
+        <img src="image/car1.jpg" width="1000px" height="300px">
+        <div class="busra">Text Left</div>
+    </div>
+
+
+</body>
+</html>

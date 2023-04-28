@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            /*height: 600px;
+            height: auto;
+            width: auto; /*otomatik kapladığı alanı hesaplayıp kapsıyor*/
+           /* width: 50%; sayfanın yarısını kaplaması için
+            background-color: aquamarine;
+        } */
+
+        /* #parent{
+            height: 100px ;
+            width: 250px;
+            border: 3px solid blue;
+        }
+        #child{
+            height: 50%;
+            width: 40%;
+            border: 2px solid red;
+        } */
+
+        .busra{
+            max-height: 50px ; /* 50px den sonrasını göstermiyor scroll bar ile aşağı inebiliriz*/
+            max-width: 150px;
+            overflow: auto; /* taşmayı gösterir*/
+        }
+        .bus{
+            min-height: 200px;
+            background-color: aquamarine;
+            overflow: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <div id="parent">
+        <div id="child">CSS Tutorial is awesome.</div>
+         <h2>
+            CSS Lesson
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quod architecto quam eius molestias sint!</p>
+    </div> -->
+    <h1>Max height and width</h1>
+    <p class="busra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nulla tristique, mollis nibh quis, interdum neque. Pellentesque at nibh eros. Nullam varius nisi sapien, quis cursus turpis accumsan sit amet. Integer non vestibulum orci. Quisque dictum, elit eu pharetra condimentum, orci ipsum sollicitudin dui, at venenatis est nulla et ipsum. Phasellus dapibus enim at nisl feugiat semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dignissim molestie odio, finibus condimentum metus dignissim sit amet. Vestibulum nunc sem, congue non ultricies a, molestie laoreet metus. Pellentesque porta dolor lacus, at rhoncus magna imperdiet et. Mauris semper nec quam ut interdum. Aenean blandit aliquam turpis, quis ultricies nulla auctor nec. Nulla in consequat ligula. Integer in risus pellentesque, luctus sem laoreet, ornare mauris. Integer rutrum semper arcu, sed tristique diam viverra pulvinar. Duis eget fermentum arcu, vel vulputate felis.
+
+        Proin accumsan varius pharetra. Sed ultrices libero in mauris placerat finibus at aliquet arcu. Suspendisse imperdiet sapien nec ultricies venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id sapien molestie, condimentum nisi non, varius magna. Nulla facilisi. Praesent sed tincidunt ipsum, quis auctor augue.
+        
+        Nullam ornare magna urna, at varius libero ultrices eget. Nam eu dictum ante, ac finibus erat. Etiam elementum justo ac ultrices placerat. Aenean fringilla quam nibh, at tristique augue congue et. Duis at justo semper, posuere erat ac, porta massa. Suspendisse potenti. Quisque pharetra nulla ac arcu cursus consectetur. Donec malesuada, leo id dapibus efficitur, felis diam pretium dolor, id congue purus dui nec ligula. Morbi pulvinar urna massa, vel vehicula mauris cursus at. Pellentesque id mattis urna, sed tempor dui. Duis diam sem, auctor in sodales ut, accumsan sed metus. Etiam dictum tristique pellentesque. Maecenas scelerisque urna et dolor ornare hendrerit.
+        
+        Quisque sed massa lacus. Curabitur quis nisl tempus, ullamcorper metus sed, sollicitudin ipsum. Maecenas elementum aliquet erat, sit amet efficitur nisl rutrum sed. Nam lorem ipsum, hendrerit sed velit non, ultrices semper quam. Etiam euismod imperdiet dictum. Integer tempor ipsum tincidunt, malesuada nulla a, finibus eros. Nullam luctus, quam ac efficitur scelerisque, nibh enim congue eros, dapibus hendrerit tellus sem a nunc. Proin commodo ac sapien gravida volutpat. Maecenas mollis euismod turpis, aliquam venenatis quam faucibus nec. Ut eget dolor elit. Cras aliquet nisl scelerisque congue lobortis. Proin semper vel dolor ut varius. Cras pellentesque augue sem, vitae ornare nunc volutpat at. Quisque ut elit quis eros convallis placerat. Sed hendrerit nisi vel lorem sagittis consequat.
+        
+        Nullam et eros fringilla, varius odio nec, consectetur augue. Vestibulum eget cursus eros. In consequat diam in purus tristique, vitae tincidunt risus pretium. Cras tincidunt ipsum lorem, a venenatis justo eleifend in. In molestie arcu vitae est cursus, nec iaculis justo lacinia. Suspendisse maximus elit id nisi consectetur fringilla. Nunc consectetur mauris eget ligula rutrum, non tempor quam rutrum. Nulla commodo felis non urna porttitor suscipit. Mauris condimentum eros fringilla maximus elementum. Ut vel ornare risus. Ut pretium at nulla at vehicula. Quisque vel pharetra nibh. Ut interdum eros nec nisi semper fermentum at at dui.</p>
+<p class="bus">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nulla tristique, mollis nibh quis, interdum neque. Pellentesque at nibh eros. Nullam varius nisi sapien, quis cursus turpis accumsan sit amet. Integer non vestibulum orci. Quisque dictum, elit eu pharetra condimentum, orci ipsum sollicitudin dui, at venenatis est nulla et ipsum. Phasellus dapibus enim at nisl feugiat semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dignissim molestie odio, finibus condimentum metus dignissim sit amet. Vestibulum nunc sem, congue non ultricies a, molestie laoreet metus. Pellentesque porta dolor lacus, at rhoncus magna imperdiet et. Mauris semper nec quam ut interdum. Aenean blandit aliquam turpis, quis ultricies nulla auctor nec. Nulla in consequat ligula. Integer in risus pellentesque, luctus sem laoreet, ornare mauris. Integer rutrum semper arcu, sed tristique diam viverra pulvinar. Duis eget fermentum arcu, vel vulputate felis.
+</p>
+</body>
+</html>
